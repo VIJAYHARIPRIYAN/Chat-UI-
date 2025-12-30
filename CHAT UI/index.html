@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Chat Board</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100 text-gray-800 p-6">
+
+<!-- HEADER -->
+<header class="mb-6 flex justify-between items-center">
+  <div>
+    <h1 class="text-xl font-semibold tracking-wide">Nova AI </h1>
+
+  </div>
+
+  <!-- NEW CHAT BUTTON (RIGHT CORNER) -->
+  <button
+    class="border px-4 py-2 rounded-md text-sm bg-white hover:bg-gray-200">
+    New Chat
+  </button>
+</header>
+
+<!-- CHAT BOARD -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-24">
+
+  <!-- CHAT CARD -->
+  <div class="bg-white border rounded-lg p-4">
+    <p class="text-sm mb-3">
+      We need a chat UI that is very different from normal apps.
+    </p>
+    <div class="text-xs text-gray-500 flex justify-between">
+      <span>Vijay</span>
+      <span>10:15 AM</span>
+    </div>
+  </div>
+
+  <div class="bg-white border rounded-lg p-4">
+    <p class="text-sm mb-3">
+      This board style works well for ideas and discussions.
+    </p>
+    <div class="text-xs text-gray-500 flex justify-between">
+      <span>Designer</span>
+      <span>10:22 AM</span>
+    </div>
+  </div>
+
+  <div class="bg-white border rounded-lg p-4">
+    <p class="text-sm mb-3">
+      Removing labels keeps the UI clean and readable.
+    </p>
+    <div class="text-xs text-gray-500 flex justify-between">
+      <span>Reviewer</span>
+      <span>10:30 AM</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- NEW CHAT INPUT -->
+<div class="fixed bottom-0 left-0 w-full bg-white border-t p-4">
+  <div class="max-w-3xl mx-auto flex gap-2">
+    <input
+      type="text"
+      placeholder="Start a new chat..."
+      class="flex-1 border rounded-md px-3 py-2 text-sm outline-none"
+    />
+    <button class="px-4 py-2 border rounded-md text-sm bg-gray-100 hover:bg-gray-200">
+      Send
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
+ 
